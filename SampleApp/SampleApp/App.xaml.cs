@@ -10,6 +10,7 @@ namespace SampleApp
         {
             InitializeComponent();
 
+            //menambahkan commit
             MainPage = new NavigationPage(new MainPage());
         }
 
