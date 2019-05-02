@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleApp.ListTemplatePage" Title="List Mahasiswa">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="lvMahasiswa" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <!--<ImageCell ImageSource="{Binding ImageUrl}" Text="{Binding Nama}" Detail="{Binding Nim}" />-->
+                        <ViewCell>
+                            <StackLayout>
+                                <Image Source="{Binding ImageUrl}" WidthRequest="80" />
+                                <Label Text="{Binding Nama}" />
+                                <Label Text="{Binding Nim}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

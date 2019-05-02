@@ -11,7 +11,7 @@ namespace SampleApp
             InitializeComponent();
 
             //menambahkan commit
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new ListTemplatePage();
         }
 
         protected override void OnStart()

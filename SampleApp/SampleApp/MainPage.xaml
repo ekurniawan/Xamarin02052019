@@ -3,7 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SampleApp"
              x:Class="SampleApp.MainPage" Title="Home">
-
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="menuList" Text="Menu List" Order="Secondary" />
+        <ToolbarItem x:Name="menuSegitiga" Text="Menu Segitiga" Order="Secondary" />
+    </ContentPage.ToolbarItems>
+ 
     <StackLayout>
         <!-- Place new controls here -->
         <Label Text="Masukan Bilangan 1 :" />
@@ -19,6 +23,7 @@
         </StackLayout>
         <StackLayout Orientation="Horizontal">
             <Button x:Name="btnAbout" Text="About Page" />
+            <Button x:Name="btnList" Text="List Page" />
         </StackLayout>
     </StackLayout>
 

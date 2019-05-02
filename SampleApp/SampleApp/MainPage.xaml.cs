@@ -20,6 +20,12 @@ namespace SampleApp
             btnTambah.Clicked += BtnTambah_Clicked;
             btnSegi.Clicked += BtnSegi_Clicked;
             btnAbout.Clicked += BtnAbout_Clicked;
+            btnList.Clicked += BtnList_Clicked;
+        }
+
+        private void BtnList_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SampleListPage());
         }
 
         private void BtnAbout_Clicked(object sender, EventArgs e)
