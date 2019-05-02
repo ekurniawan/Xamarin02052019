@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SampleApp"
+             x:Class="SampleApp.MainPage" Title="Home">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Masukan Bilangan 1 :" />
+        <Entry x:Name="txtBil1" Keyboard="Numeric" Placeholder="masukan bil 1" />
+        <Label Text="Masukan Bilangan 2 :" />
+        <Entry x:Name="txtBil2" Keyboard="Numeric" Placeholder="masukan bil 2" />
+        <Label Text="Hasil :" />
+        <Entry x:Name="txtHasil" IsEnabled="False" />
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="btnTambah" Text="Tambah" />
+            <Button x:Name="btnKurang" Text="Kurang" />
+            <Button x:Name="btnSegi" Text="Luas Segitiga" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="btnAbout" Text="About Page" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
